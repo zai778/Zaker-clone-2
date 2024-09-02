@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+
+
+
+
+ .custom-wave-bg {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to right, #004d40, #00695c);
+  clip-path: ellipse(50% 100% at 50% 100%);
+}
+
+.custom-wave-bg::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: inherit;
+  filter: blur(30px);
+  opacity: 0.7;
+} 
