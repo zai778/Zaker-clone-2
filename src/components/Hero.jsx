@@ -1,4 +1,3 @@
-
 import React from "react";
 import logo from "../img/logo.png";
 
@@ -7,6 +6,7 @@ const Hero = () => {
     <div className="relative bg-gradient-to-b from-teal-700 to-teal-900 text-white pt-12">
       {/* Container for logo and title */}
       <div className="flex flex-col items-center justify-center space-y-4">
+        {/* الشعار يبقى دائمًا فوق العنوان */}
         <div className="flex items-center justify-center">
           <img
             src={logo}
@@ -15,16 +15,16 @@ const Hero = () => {
           />
         </div>
 
+        
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-center mb-10 md:mb-20">
             لنجعل الذكر ثقافة عالمية
           </h1>
-          
         </div>
       </div>
 
       {/* SVG Wave */}
-      <div className="relative -mt-9 lg:-mt-30">
+      <div className="relative -mt-1 lg:-mt-10">
         <svg
           viewBox="0 0 1428 174"
           version="1.1"
@@ -66,3 +66,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
